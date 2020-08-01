@@ -28,6 +28,22 @@ public class MainActivity extends AppCompatActivity {
         RPS.realDisplay(0,com,tv5);
     }
 
+    public void onbutton2Clicked(View v)
+    {
+        tv3.setText("You threw PAPER");
+        int com = (int) (Math.random()*10)%3;
+        RPS.comDisplay(com, tv4);
+        RPS.realDisplay(0,com,tv5);
+    }
+
+    public void onbutton3Clicked(View v)
+    {
+        tv3.setText("You threw SCISSORS");
+        int com = (int) (Math.random()*10)%3;
+        RPS.comDisplay(com, tv4);
+        RPS.realDisplay(0,com,tv5);
+    }
+
 }
 
 
